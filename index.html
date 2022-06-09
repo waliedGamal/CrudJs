@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/index_style.css">
+    </head>
+    <body>
+
+        <div class="container py-5">
+
+                <label for="pName" class="form-label">Product Name</label>
+                <input type="text" id="pName" class="form-control mb-3" >
+
+                <label for="pPrice" class="form-label">Product Price</label>
+                <input type="text" id="pPrice" class="form-control mb-3" >
+                
+                <label for="pCat" class="form-label">Product Catagory</label>
+                <input type="text" id="pCat" class="form-control mb-3">
+
+                <label for="pDesc" class="form-label">Product Description</label>
+                <textarea type="text" id="pDesc" class="form-control"></textarea>
+
+                <button class="btn btn-primary mt-3 " id="addBtn" onclick="addProduct()">Add Product</button>  
+
+
+            <input type="text" onkeyup="SearchProduct(this.value)" class="form-control m-auto w-50" placeholder="Search Products">
+
+            <table class="table mt-5 text-primary">
+                <thead>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Catagory</th>
+                    <th>Description</th>
+                    <th class=" text-warning">Product Update</th>
+                    <th class=" text-danger">Product Delete</th>
+                </thead>
+
+                <tbody id="tbody">
+                </tbody>
+            </table>
+
+        </div>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/mine.js"></script>
+    </body>
+</html>
